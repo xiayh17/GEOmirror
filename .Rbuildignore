@@ -1,0 +1,5 @@
+^.*\.Rproj$
+^\.Rproj\.user$
+^data-raw$
+^readme.md
+^news.md
