@@ -4,5 +4,4 @@
 #'
 #' @format A Large character with GSE:
 #' \code{series.accession}
-#'
 "series.accession"
