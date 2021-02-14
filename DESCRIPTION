@@ -7,12 +7,13 @@ Maintainer: jianming zeng  <jmzeng1314@163.com>
 Description: Due to the poor internet speed of mainland China, 
               the researchers can hardly downlaod the GEO dataset by getGEO function from GEOquery package.
               So I write this GEOmirror package which only offer geoChina function, 
-              it's very easy to use, for example :  geoChina('GSE1009') 
+              it's very easy to use, for example :  geoChina('GSE1009') .
 License: Artistic-2.0
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.1.1
 Depends:
+    R (>= 2.10)
 biocViews:
 Imports:
   GEOquery

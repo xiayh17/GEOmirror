@@ -7,20 +7,32 @@
 ##'      geoChina('GSE1009') is the same as eSet=getGEO('GSE1009', getGPL = F)
 ##'
 ##' @param gse input GSE id, such as GSE1009, GSE2546, default:GSE2546
+##' @param mirror tencent as server for download
+##' @inheritParams series.accession
 ##' @import GEOquery
+##' @importFrom utils download.file
+##' @importFrom utils data
+##' @importFrom utils globalVariables
 ##' @return a list of ExpressionSet, which contains the  expression matrix and phenotype data
 ##' @examples
+##' \dontrun{
 ##' geoChina()
 ##' geoChina('GSE1009')
 ##' geoChina('GSE2546')
-##' @export geoChina
+##' }
+##' @export
+globalVariables("series.accession")
 
 geoChina <- function(gse='GSE2546',mirror='tencent'){
   # same as code : eSet=getGEO('GSE2546', destdir=".", AnnotGPL = F, getGPL = F)
   # http://49.235.27.111/GEOmirror/GSE2nnn/GSE2546_eSet.Rdata
   # gse='GSE2546';mirror='tencent'
 
+  gset=NULL
   gse=toupper(gse)
+
+  # get reference data
+  # data("series.accession", envir=environment())
 
   if(!gse %in% series.accession){
     stop('Your GSE may not be expression by array, or even not a GSE')
