@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/xiayh17/GEOmirror.svg?branch=master)](https://travis-ci.com/xiayh17/GEOmirror)
+
 #  GEOmirror
 
 A package for researchers in mainland China to downlaod the GEO dataset,  which is just a **replacement** of **getGEO** function from **GEOquery** package.
