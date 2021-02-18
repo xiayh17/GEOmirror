@@ -3,3 +3,5 @@
 ^data-raw$
 ^readme.md
 ^news.md
+^\.github$
+^\.travis\.yml$
