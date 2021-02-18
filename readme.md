@@ -1,3 +1,4 @@
+![R-CMD-check](https://github.com/xiayh17/GEOmirror/workflows/R-CMD-check/badge.svg)
 [![Build Status](https://travis-ci.com/xiayh17/GEOmirror.svg?branch=master)](https://travis-ci.com/xiayh17/GEOmirror)
 
 #  GEOmirror
